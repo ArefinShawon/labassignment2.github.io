@@ -1,7 +1,10 @@
 # labassignment2.github.io
 there are 3part of this project 
+
   part 01. random quote generator with diffrent color on each time refresh and there is a weight converter that converts weights from kg to lb and vice versa.
+  
   part 02. webpage which will show the output (Max, Min, Sum, Average and Reverse Order) of a series of number.
+  
   part03. Magic box that does as following-
     Clear All: Deletes all text from the text area.
     Capitalize: Converts the text to upper/lower case. Button works as toggle.
