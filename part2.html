@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href ="style.css" rel="stylesheet" type="text/css"/>
+	<title>CSE391 Lab02 15301067</title>
+</head>
+
+<body>
+	<div class="main">
+		<nav><ul>
+			<li><a href="index.html">Part01</a></li>
+			<li><a href="part2.html">Part02</a></li>
+			<li><a href="part3.html">Part03</a></li>
+		</ul></nav>
+	</div></br>
+	
+	<!-- details -->
+
+	<marquee width="30%">
+		<i>NAME:</i> Hasinur Arefin Shawon
+		<i>ID:</i> 15301067
+		<i>LAB ASSIGNMENT:</i> 02
+	</marquee></br></br></br></br>
+
+	<!-- Part2 min max sum avg reverse -->
+	<div class="part2input">
+		<h2><label>Input number series:</label>
+			<input type="text" id="nums" oninput="calculate()" onchange="calculate()" placeholder="e.g: 1, 2, 3, 4"></h2>
+			<p>
+				<h2><strong>max:</strong> <span id="maxx"></span></h2></br>
+				<h2><strong>min:</strong> <span id="min"></span></h2></br>
+				<h2><strong>sum:</strong> <span id="sum"></span></h2></br>
+				<h2><strong>avg:</strong> <span id="average"></span></h2></br>
+				<h2><strong>reverse:</strong> <span id="reverse"></span></h2></br>
+			</p>		
+		</div>
+
+		<script>
+			var array = [];
+			function calculate(){
+				sumofnums = 0;
+
+				nums = document.getElementById('nums').value.split(", ")/*.map(Number)*/;
+				for (i = 0; i<nums.length; i++) {
+					array[i] = parseInt(nums[i]);
+					sumofnums += parseInt(nums[i]);
+					avg = sumofnums/nums.length;
+				}
+				document.getElementById("sum").innerHTML = sumofnums;
+				document.getElementById("average").innerHTML = avg;
+				document.getElementById("maxx").innerHTML = Math.max.apply(Math , array);
+				document.getElementById("min").innerHTML = Math.min.apply(Math , array);
+				array.reverse();
+				document.getElementById("reverse").innerHTML = array;
+			}
+		</script>
+	</body>
+	</html>

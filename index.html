@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href ="style.css" rel="stylesheet" type="text/css"/>
+	<title>CSE391 Lab02 15301067</title>
+</head>
+
+<body>
+	<div class="main">
+		<nav><ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="part2.html">Part02</a></li>
+			<li><a href="part3.html">Part03</a></li>
+		</ul></nav>
+	</div></br>
+
+<!-- details -->
+
+	<marquee width="30%">
+		<i>NAME:</i> Hasinur Arefin Shawon
+		<i>ID:</i> 15301067
+		<i>LAB ASSIGNMENT:</i> 02
+	</marquee></br></br></br>
+
+	<!-- 	random quote generator-->
+
+	<h2>Quote Box</h2>
+	<div id="quoteDisplay"></div></br>
+
+	<!-- colour change -->
+
+	<div class="btns">
+		<button id="bluebtn" onclick="changeColor1('quoteDisplay')">B</button>
+		<button id="greenbtn" onclick="changeColor2('quoteDisplay')">G</button>
+		<button id="redbtn" onclick="changeColor3('quoteDisplay')">R</button>
+		<button id="yellowbtn" onclick="changeColor4('quoteDisplay')">Y</button>
+	</div> </br></br></br>
+
+	<!-- 	Hero converter -->
+
+	<div class="cnvrtr">
+		<h2>Weight Converter</h2>
+		<h4>Use the search box to find your required metric converter</h4>
+		<label>Convert</label>
+		<input type="number" id="n1"/>
+
+		<select id="operators">
+			<option value="kgtolb">kg to lb</option>
+			<option value="lbtokg">lb to kg</option>
+		</select>
+
+		<button onclick="calc();">Go</button>
+		<span id="result"></span>
+	</div>
+</br>
+
+<script src="javascript.js"></script>
+</body>
+</html>
